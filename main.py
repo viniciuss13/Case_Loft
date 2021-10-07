@@ -19,4 +19,4 @@ if __name__ == "__main__":
     # Dica: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_excel.html
     arquivos = list(Path(argumentos.input).glob("*.pdf"))
     dataframe = extractor.extrair_dados_arquivos(arquivos)
-    dataframe.to_excel(argumentos.output)
+    dataframe.to_excel(argumentos.output,index=False)
