@@ -1,5 +1,5 @@
 from argparse import ArgumentParser
-import extractor
+from case_loft import extractor
 import logging
 from pathlib import Path
 

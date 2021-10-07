@@ -5,7 +5,7 @@ import pandas as pd
 from pathlib import Path
 from workalendar.america.brazil import BrazilBankCalendar
 
-from file import extrair_pdf_texto
+from case_loft.file import extrair_pdf_texto
 
 REGEX_UNIT_ID = re.compile(
     r"(?P<unit_id>\d+)(?=.*\n1\.)", flags=re.M | re.S | re.I)
