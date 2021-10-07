@@ -8,7 +8,7 @@ from workalendar.america.brazil import BrazilBankCalendar
 from case_loft.file import extrair_pdf_texto
 
 REGEX_UNIT_ID = re.compile(
-    r"(?P<unit_id>\d+)(?=.*\n1\.)", flags=re.M | re.S | re.I)
+    r"(?P<unit_id>\d{6})(?=.*\n1\.)", flags=re.M | re.S | re.I)
 REGEX_VALOR = re.compile(
     r"3\.1\. R\$ (?P<valor_total_da_venda>[\d.,]+).*?", flags=re.M | re.S | re.I)
 REGEX_DIAS_ESCRITURA = re.compile(
